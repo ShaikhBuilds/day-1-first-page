@@ -1,15 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShaikhBuilds</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+            background: #111714;
+            color: #edf4ef;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            padding: 32px 20px;
+            background-image:
+                radial-gradient(ellipse at 50% 38%, rgba(67, 133, 99, 0.16), transparent 58%),
+                linear-gradient(rgba(225, 255, 237, 0.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(225, 255, 237, 0.035) 1px, transparent 1px);
+            background-size: auto, 48px 48px, 48px 48px;
+        }
+
+        main {
+            width: min(100%, 720px);
+            padding: 56px 24px;
+            text-align: center;
+        }
+
+        .day-label {
+            margin: 0 0 24px;
+            color: #9bd7ae;
+            font-family: "Courier New", monospace;
+            font-size: 0.8rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            line-height: 1.08;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            max-width: 540px;
+            margin: 24px auto 0;
+            color: #b9c8bf;
+            font-size: 1.15rem;
+            line-height: 1.7;
+        }
+
+        .divider {
+            width: 48px;
+            height: 2px;
+            margin: 36px auto;
+            border: 0;
+            background: #83d19d;
+        }
+
+        .journey {
+            margin: 0;
+            color: #edf4ef;
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 520px) {
+            main {
+                padding: 36px 8px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>I'm building with AI.</h1>
-    
-    <p>I'm learning to build software with AI coding agents.</p>
-
-    <p>Day 1 starts here.</p>
+    <main>
+        <p class="day-label">Day 03 / Build log</p>
+        <h1>I'm building with AI.</h1>
+        <p class="subtitle">I'm learning to build software with AI coding agents.</p>
+        <hr class="divider">
+        <p class="journey">Day 3 of my journey — learning to build SaaS with AI coding agents.</p>
+        <p class="journey">Starting from zero → building real products.</p>
+    </main>
 </body>
 </html>
 
